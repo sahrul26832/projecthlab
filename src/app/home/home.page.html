@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar class="toolBarColor" >
+    <ion-title>
+      <span text-color="my-custom-color"> Home</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content clsss="contentColor">
+    <ion-grid >
+        <ion-row class="heightCol">
+          <ion-col >
+              <ion-button color="light" class="fullButton">picture sponsor</ion-button>
+          </ion-col>
+          </ion-row>
+      </ion-grid>
+    <ion-grid >
+        <ion-row class="heightCol">
+          <ion-col >
+              <ion-button color="light" class="fullButton" (click)="flasLight()">Flash light</ion-button>
+          </ion-col>
+          <ion-col >
+              <ion-button color="light"class="fullButton"(click)="ColorScreen()">Color screen</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid >
+          <ion-row class="heightCol">
+            <ion-col>
+                <ion-button color="light" class="fullButton"(click)="Sound()">Sound</ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button color="light" class="fullButton"(click)="control()">Control</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+</ion-content>

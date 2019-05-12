@@ -1,0 +1,170 @@
+<ion-header>
+
+  <ion-toolbar class="toolBarColor" text-color="my-custom-color">
+    <ion-buttons>
+      <ion-button (click)="backHome()">
+        <ion-icon slot="icon-only" name="arrow-dropleft-circle" color="light" class="iconBack"></ion-icon>
+      </ion-button>
+      <ion-title> <span text-color="my-custom-color">Color Screen</span></ion-title>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content clsss="contentColor">
+
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:rgb(255,0,0); --border-color: rgb(255,0,0)" class="button-outline"
+          (click)="getColor($event)" id="rgb(255,0,0)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:	rgb(255, 64, 0); --border-color: 	rgb(255, 64, 0)" class="button-outline"
+          (click)="getColor($event)" id="rgb(255, 64, 0)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:rgb(255, 128, 0); --border-color: rgb(255, 128, 0)" class="button-outline"
+          (click)="getColor($event)" id="rgb(255, 128, 0)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:rgb(255, 191, 0); --border-color: rgb(255, 191, 0)" class="button-outline"
+          (click)="getColor($event)" id="rgb(255, 191, 0)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:	rgb(255, 255, 0); --border-color: 	rgb(255, 255, 0)" class="button-outline"
+          (click)="getColor($event)" id="rgb(255, 255, 0)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:	rgb(191, 255, 0); --border-color: 	rgb(191, 255, 0)" class="button-outline"
+          (click)="getColor($event)" id="rgb(191, 255, 0)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:	rgb(128, 255, 0); --border-color: 	rgb(128, 255, 0)" class="button-outline"
+          (click)="getColor($event)" id="rgb(128, 255, 0)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:	rgb(64, 255, 0); --border-color: 	rgb(64, 255, 0)" class="button-outline"
+          (click)="getColor($event)" id="rgb(64, 255, 0)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:rgb(0, 255, 0); --border-color: rgb(0, 255, 0)" class="button-outline"
+          (click)="getColor($event)" id=" rgb(0, 255, 0)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:	rgb(0, 255, 64); --border-color: 	rgb(0, 255, 64)" class="button-outline"
+          (click)="getColor($event)" id="rgb(0, 255, 64)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:	rgb(0, 255, 128); --border-color: 	rgb(0, 255, 128)" class="button-outline"
+          (click)="getColor($event)" id="rgb(0, 255, 128)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:	rgb(0, 255, 191); --border-color: 	rgb(0, 255, 191)" class="button-outline"
+          (click)="getColor($event)" id="rgb(0, 255, 191)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:rgb(0, 255, 255); --border-color: rgb(0, 255, 255)" class="button-outline"
+          (click)="getColor($event)" id="rgb(0, 255, 255)">Color</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:	rgb(0, 191, 255); --border-color: 	rgb(0, 191, 255)" class="button-outline"
+          (click)="getColor($event)" id="rgb(0, 191, 255)">Color</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:rgb(0, 128, 255); --border-color: rgb(0, 128, 255)" class="button-outline"
+          (click)="getColor($event)" id="rgb(0, 128, 255)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:rgb(0, 64, 255); --border-color: rgb(0, 64, 255)" class="button-outline"
+          (click)="getColor($event)" id="rgb(0, 64, 255)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:		rgb(0, 0, 255); --border-color: 		rgb(0, 0, 255)" class="button-outline"
+          (click)="getColor($event)" id="rgb(0, 0, 255)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:	rgb(64, 0, 255); --border-color: 	rgb(64, 0, 255)" class="button-outline"
+          (click)="getColor($event)" id="rgb(64, 0, 255)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:	rgb(128, 0, 255); --border-color: 	rgb(128, 0, 255)" class="button-outline"
+          (click)="getColor($event)" id="rgb(128, 0, 255)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:	rgb(191, 0, 255); --border-color: 	rgb(191, 0, 255)" class="button-outline"
+          (click)="getColor($event)" id="rgb(191, 0, 255)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:rgb(255, 0, 255); --border-color: rgb(255, 0, 255)" class="button-outline"
+          (click)="getColor($event)" id="rgb(255, 0, 255)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:	rgb(255, 0, 191); --border-color: 	rgb(255, 0, 191)" class="button-outline"
+          (click)="getColor($event)" id="rgb(255, 0, 191)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="heightCol">
+      <ion-col>
+        <ion-button style=" --color:		rgb(255, 0, 128); --border-color: 		rgb(255, 0, 128)" class="button-outline"
+          (click)="getColor($event)" id="rgb(255, 0, 128)">Color </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style=" --color:	rgb(255, 0, 64); --border-color: 	rgb(255, 0, 64)" class="button-outline"
+          (click)="getColor($event)" id="rgb(255, 0, 64)">Color </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

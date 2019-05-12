@@ -1,0 +1,34 @@
+<div [ngStyle]="{ 'background-color' : data}" class="colorBackgorund">
+  <!-- <ion-button color="danger"  [routerLink]="tab2"  routerDirection="root" (click)="ColorScreen()">Home</ion-button> -->
+  <!-- <ion-toolbar class="toolBarColor" text-color="my-custom-color"> -->
+    <!-- <ion-buttons > -->
+      <ion-button (click)="ColorScreen()" color="{data}" > <ion-icon slot="icon-only" name="arrow-dropleft-circle"  class="iconBack" ></ion-icon></ion-button>
+    <!-- </ion-buttons> -->
+    
+  <!-- </ion-toolbar> -->
+
+  <!-- <ion-fab vertical="top" horizontal="end" slot="fixed" class="sizeFap">
+    <ion-fab-button class="sizeFap">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button style=" --background:#1e1e;"></ion-fab-button>
+      <ion-fab-button color="primary"></ion-fab-button>
+      <ion-fab-button style=" --background:#1e1e;"></ion-fab-button>
+    </ion-fab-list>
+   -->
+    
+  <!-- </ion-fab>
+  <ion-range min="0" max="255" color="secondary">
+    <ion-label slot="start">R</ion-label>
+    <ion-label slot="end">255</ion-label>
+  </ion-range>
+  <ion-range min="0" max="255" color="secondary">
+    <ion-label slot="start">G</ion-label>
+    <ion-label slot="end">255</ion-label>
+  </ion-range>
+  <ion-range min="0" max="255" color="secondary">
+    <ion-label slot="start">B</ion-label>
+    <ion-label slot="end">255</ion-label>
+  </ion-range> -->
+</div>
